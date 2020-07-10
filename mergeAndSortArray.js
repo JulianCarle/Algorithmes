@@ -1,4 +1,4 @@
-// MERGE AND SORT TWO ARRAYS
+// MERGE AND SORT
 
 function mergeArrayAndSort1(array1, array2){
     //Check inputs
@@ -10,13 +10,13 @@ function mergeArrayAndSort1(array1, array2){
     }
     const mergedArray = [];
     for (i=0; i<array1.length; i++){
-        mergedArray.push(array1[i])
+        mergedArray.push(array1[i]);
     }
     for (j=0; j<array2.length; j++){
-        mergedArray.push(array2[j])
+        mergedArray.push(array2[j]);
     }
     mergedArray.sort((a,b) => a - b)
-    return mergedArray
+    return mergedArray;
 }
 
 const mergeArrayAndSort2 = (array1, array2) => {
@@ -52,7 +52,6 @@ function mergeSortedArrays(array1, array2){ //here, array1 and array2 must be al
     return mergedArray;
 }
   
-  
-  mergeArrayAndSort1([100,3,4,31], [3,0,6,-5]);
-  mergeArrayAndSort2([100,3,4,31], [3,0,6,-5]);
-  mergeSortedArrays([-40,0,3,4,31], [-20,4,6,30]);
+mergeArrayAndSort1([100,3,4,31], [3,0,6,-5]);
+mergeArrayAndSort2([100,3,4,31], [3,0,6,-5]);
+mergeSortedArrays([-40,0,3,4,31], [-20,4,6,30]);
